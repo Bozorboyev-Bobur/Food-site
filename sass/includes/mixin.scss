@@ -1,0 +1,19 @@
+@mixin title-style {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+@mixin text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+// @mixin sliderBtn {
+    
+// }

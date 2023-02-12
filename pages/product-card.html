@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant retarurant</title>
+    <link rel="stylesheet" href="../assets/css/product-card.css">
+  </head>
+  <body>
+    <div class="loading" id="page-preloader">
+      <div class="circles"><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span></span><span> </span><span> </span><span> </span><span> </span><span> </span><span></span></div>
+    </div>
+    <header class="header" id="header">
+      <div class="container"> 
+        <div class="header__body">
+          <div class="header__burger burger" id="header-menu-btn"><span class="burger__stick"> </span><span class="burger__stick"> </span><span class="burger__stick"> </span></div>
+          <div class="header__menu header-menu" id="header-menu">
+            <div class="header-menu__block">
+              <div class="d5">
+                <form><span type="submit"><img src="/assets/images/header/white-location.svg" alt=""></span>
+                  <input class="superSearch" type="text" placeholder="Введите адрес доставки" id="superSearch">
+                  <button type="submit"><img src="/assets/images/header/Search.svg" alt=""></button>
+                </form>
+              </div>
+            </div>
+            <div class="header-menu__contacts contacts"> <a class="contacts__tel" href="tel:98765433456">Позвонить<img class="contacts__img" src="../assets/images/header/call.svg" alt=""></a><a class="contacts__bron" href="#">Забронировать стол<img class="contacts__img" src="../assets/images/header/bookmark.svg" alt=""></a></div>
+            <div class="header__lists">
+              <ul class="header-menu__list">
+                <li class="header-menu__item"><a class="header-menu__link" href="/pages/stocks.html">Акции</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Додо-книга</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Блог «Сила ума»</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Додо ИС</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Франшиза</a></li>
+              </ul>
+              <ul class="header-menu__list">
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">О нас </a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Додо-книга</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Блог «Сила ума»</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Додо ИС</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Франшиза</a></li>
+              </ul>
+              <ul class="header-menu__list">
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Франшиза </a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Поставщикам</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Почему мы готовим без перчаток?</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">Экскурсии и мастер-классы</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="#footer">В пиццерии</a></li>
+              </ul>
+            </div>
+          </div>
+          <h1 class="header__logo"><a href="../pages/main.html">LOGOS</a></h1><a class="header__basket" href="#" id="open-pop-up">
+            <p>Корзина</p><span> </span></a>
+          <div class="pop-up" id="pop-up">
+            <div class="pop-up__bg" id="pop-up__bg"></div>
+            <div class="pop-up__container">
+              <div class="pop-up__body"><img class="pop-up__img" src="../assets/images/header/cart.svg" alt=""><span class="pop-up__text">корзина пустая</span>
+                <div id="pop-up__button"> <a class="pop-up__button" href="#menu">Посмортеть меню</a></div>
+                <div class="pop-up-close" id="pop-up-close">&#10006</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="menu element-animation" id="menu">
+      <div class="menu__content">
+        <div class="container">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#cool-snacks">Холодные закуски</a></li>
+            <li class="menu__item"><a class="menu__link" href="#hot-snacks">Горячие закуски</a></li>
+            <li class="menu__item"><a class="menu__link" href="#meat-snacks">Мясные блюда</a></li>
+            <li class="menu__item"><a class="menu__link" href="#soup-snacks">Супы</a></li>
+            <li class="menu__item"><a class="menu__link" href="#fish-snacks">Рыбные блюда</a></li>
+            <li class="menu__item"><a class="menu__link" href="#cool-snacks">Холодные закуски</a></li>
+            <li class="menu__item"><a class="menu__link" href="#branded-snacks">Фирменные блюда</a></li>
+            <li class="menu__item"><a class="menu__link" href="#drink-snacks">Напитки</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="product-card element-animation" id="product-card">
+      <div class="container"> <a class="product-card__back-btn" href="../pages/main.html"><img src="/assets/images/slider/arrow.svg" alt="">
+          <p>Вернуться назад</p></a>
+        <div class="product-card__big-card big-card">
+          <div class="big-card__left big-card-left"><img class="big-card-left__img" src="https://etopizza.ru/wp-content/uploads/2021/05/302_1-1.jpg" alt=""></div>
+          <div class="big-card__right big-card-right">
+            <div class="big-card-right__content">
+              <h3 class="big-card-right__title">Ягненок
+                <div class="big-card-right__info-btn" id="info-btn"> <img src="../assets/images/big-card/info.svg" alt=""></div>
+              </h3>
+              <div class="big-card-right__text" id="big-card-right__text">помидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточек помидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточекпомидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточекпомидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточекпомидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточекпомидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточекпомидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточекпомидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточекпомидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточекпомидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточекпомидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточекпомидор, сыр фета, масло подсолнечное, капуста пекинская, перец сладкий красный, огурцы, оливки без косточек</div><span class="big-card-right__weight">Вес: 210 г</span>
+              <div class="big-card-right__bottom-content">
+                <button class="big-card-right__btn">В корзину<img class="cart-img" src="../assets/images/big-card/shoper.svg" alt=""></button><span class="big-card-right__price">259 ₽</span>
+              </div>
+              <div class="big-card-right__info bcr-info" id="info-list">
+                <div class="bcr-info__info">Пищевая ценность на 100гр.</div><svg viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path transform="translate(-2 0)" fill-rule="evenodd" d="M 9.52569 1.60834L 3.07216 8.64855C 1.89626 9.93135 2.80626 12 4.54647 12L 17.4535 12C 19.1937 12 20.1037 9.93135 18.9278 8.64855L 12.4743 1.60834C 11.6816 0.743602 10.3184 0.743603 9.52569 1.60834Z"></path></svg>
+                <div class="bcr-info__item"> 
+                  <p class="bcr-info__title">Белки</p><span class="bcr-info__content">17.23</span>
+                </div>
+                <div class="bcr-info__item"> 
+                  <p class="bcr-info__title">Жиры</p><span class="bcr-info__content">7.63</span>
+                </div>
+                <div class="bcr-info__item"> 
+                  <p class="bcr-info__title">Углеводы</p><span class="bcr-info__content">22.35</span>
+                </div>
+                <div class="bcr-info__item"> 
+                  <p class="bcr-info__title">Ккал</p><span class="bcr-info__content">234</span>
+                </div>
+                <div class="bcr-info__item"> 
+                  <p class="bcr-info__title">Вес</p><span class="bcr-info__content">210 г</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider" id="recomendation">
+      <div class="slider__content">
+        <div class="container">
+          <h2 class="slider__title title">С этими товарами покупают</h2>
+        </div>
+        <div class="slider__list"> 
+          <div class="slider__item card element-animation"><img class="card__img" src="../assets/images/slider/Lamb.png" alt="">
+            <div class="card__body">
+              <div class="card__top card-top">
+                <div class="card-top__top-content">
+                  <h3 class="card__title">Ягненок</h3>
+                  <div class="card__weight">Вес: 225 г</div>
+                </div>
+                <div class="card-top__bottom-content">   
+                  <div class="card__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</div>
+                </div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__price">620 ₽</div>
+                <button class="card__basket">В корзину<img class="basket__img" src="../assets/images/slider/Buy.svg" alt=""></button>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item card element-animation"><img class="card__img" src="../assets/images/slider/Duck.png" alt="">
+            <div class="card__body">
+              <div class="card__top card-top">
+                <div class="card-top__top-content">
+                  <h3 class="card__title">Ягненок</h3>
+                  <div class="card__weight">Вес: 225 г</div>
+                </div>
+                <div class="card-top__bottom-content">   
+                  <div class="card__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</div>
+                </div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__price">620 ₽</div>
+                <button class="card__basket">В корзину<img class="basket__img" src="../assets/images/slider/Buy.svg" alt=""></button>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item card element-animation"><img class="card__img" src="../assets/images/slider/Goose.png" alt="">
+            <div class="card__body">
+              <div class="card__top card-top">
+                <div class="card-top__top-content">
+                  <h3 class="card__title">Ягненок</h3>
+                  <div class="card__weight">Вес: 225 г</div>
+                </div>
+                <div class="card-top__bottom-content">   
+                  <div class="card__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</div>
+                </div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__price">620 ₽</div>
+                <button class="card__basket">В корзину<img class="basket__img" src="../assets/images/slider/Buy.svg" alt=""></button>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item card element-animation"><img class="card__img" src="../assets/images/slider/Stake.png" alt="">
+            <div class="card__body">
+              <div class="card__top card-top">
+                <div class="card-top__top-content">
+                  <h3 class="card__title">Ягненок</h3>
+                  <div class="card__weight">Вес: 225 г</div>
+                </div>
+                <div class="card-top__bottom-content">   
+                  <div class="card__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</div>
+                </div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__price">620 ₽</div>
+                <button class="card__basket">В корзину<img class="basket__img" src="../assets/images/slider/Buy.svg" alt=""></button>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item card element-animation"><img class="card__img" src="../assets/images/slider/Turkey.png" alt="">
+            <div class="card__body">
+              <div class="card__top card-top">
+                <div class="card-top__top-content">
+                  <h3 class="card__title">Ягненок</h3>
+                  <div class="card__weight">Вес: 225 г</div>
+                </div>
+                <div class="card-top__bottom-content">   
+                  <div class="card__text">Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком</div>
+                </div>
+              </div>
+              <div class="card__bottom">
+                <div class="card__price">620 ₽</div>
+                <button class="card__basket">В корзину<img class="basket__img" src="../assets/images/slider/Buy.svg" alt=""></button>
+                <div class="card__bottom_active"> 
+                  <button class="card__basket_active"> <img src="../assets/images/slider/Minus.svg" alt=""></button>
+                  <div class="card__price_active">620 ₽</div>
+                  <button class="card__basket_active"> <img src="../assets/images/slider/Plus.svg" alt=""></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map" id="map"> <img class="map__bg" src="/assets/images/map/map.png" alt="">
+      <div class="container"> 
+        <div class="map__modal modal element-animation">
+          <h3 class="modal__title">Контакты</h3>
+          <div class="modal__address address"><span>Наш адрес:</span>
+            <p>МО, городской округ Красногорск, село Ильинкое, Экспериментальная улица, 10</p>
+          </div>
+          <div class="modal__mail"><span>Наша почта:</span>
+            <p>auto.wash@gmail.com</p>
+          </div>
+          <div class="modal__bottom">
+            <button class="modal__button">Забронировать стол</button>
+            <div class="modal__tel"> <span>+998 (90) 123-45-67</span>
+              <p>Звоните или оставляйте заявку</p>
+            </div>
+          </div>
+          <div class="modal__networks networks"> 
+            <p>Мы в соц сетях:</p>
+            <div class="networks__imgs"> <img src="../assets/images/map/facebook.svg" alt=""><img src="../assets/images/map/vk.svg" alt=""><img src="../assets/images/map/youtube.svg" alt=""><img src="../assets/images/map/instagram.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer" id="footer" data-aos="fade-up" data-aos-anchor=".other-element" data-aos-delay="5000"><a class="footer__scroll-top-btn" href="#header"><img src="../assets/images/footer/arrow.svg" alt=""></a><a class="footer__scroll-top-btn_small-device" href="#header">Поднятся в вверх<img src="../assets/images/footer/arrow.svg" alt=""></a>
+      <div class="container">
+        <div class="footer__container"> 
+          <div class="footer__left">
+            <div class="footer__logo">Logos     </div>
+            <p>© ООО СК «АПШЕРОН» Все права защищены. 2010-2020</p><a href="#"> Пользовательское соглашение</a><a href="#"> Карта сайта</a><a href="#"> Политика конфиденциальности</a>
+          </div>
+          <div class="footer__right"> <a href="#"> О ресторане                       </a><a href="#"> Условия доставки</a><a href="#"> Возврат товара</a><a href="#"> Акции</a><a href="#"> ЧаВо</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/scripts/preloader.js"></script>
+    <script src="../assets/scripts/script.js"></script>
+    <script src="../assets/scripts/slick.min.js"> </script>
+    <script src="../assets/scripts/slider.js"></script>
+    <script src="../assets/scripts/show-animation.js"></script>
+    <script src="../assets/scripts/burger.js"></script>
+    <script src="../assets/scripts/popup.js"></script>
+    <script src="../assets/scripts/live-search.js"></script>
+  </body>
+</html>

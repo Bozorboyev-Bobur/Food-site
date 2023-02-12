@@ -1,0 +1,66 @@
+.content.element-animation {
+    transition: all 1.5s ease-out 1.5s;
+}
+
+#content {}
+
+.content {
+    &__bg {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    &__text {
+        width: 40%;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+    .content {
+
+    }
+}
+@media (max-width: 992px) {
+    
+}
+@media (max-width: 768px) {
+    
+}
+@media (max-width: 576px) {
+    .content {
+        &__bg {
+            height: 250px;
+            object-fit: cover;
+            object-position: right;
+            filter: brightness(.5);
+        }
+        &__text{
+            width: 60%;
+        }
+    }
+    
+}
+@media (max-width: 480px) {
+    .content {
+        &__bg {
+            height: 230px;
+            object-fit: cover;
+            object-position: right;
+            filter: brightness(.5);
+        }
+        &__text{
+            width: 80%;
+        }
+    }
+    
+}
+@media (max-width: 360px) {
+    
+}

@@ -1,0 +1,225 @@
+.about-right__card.element-animation {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.about-right__card.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.2s;
+    transform: translateY(0%);
+}
+
+.about-right__card:nth-child(1n).element-animation.element-show {
+    transition: all 1.2s ease .5s;
+}
+
+.about-right__card:nth-child(2n).element-animation.element-show {
+    transition: all 1.2s ease .7s;
+}
+
+.about-right__card:nth-child(3n).element-animation.element-show {
+    transition: all 1.2s ease .9s;
+}
+
+.about-right__card:nth-child(4n).element-animation.element-show {
+    transition: all 1.2s ease 1.1s;
+}
+
+.about {
+    width: 100%;
+    position: relative;
+    height: 547px;
+
+    &__bg {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        padding: 0 15px;
+
+        & img {
+            object-fit: cover;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 0 30px;
+    }
+
+    &__left {
+        width: 45%;
+        height: auto;
+
+    }
+
+    &__right {
+        width: 50%;
+        height: auto;
+    }
+}
+
+.container {
+    height: 100%;
+}
+
+.about-left {
+
+    &__title {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: "Gilroy Semi-bold";
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        color: #cfcfcf;
+    }
+
+    &__button {
+        width: 220px;
+        height: 44px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 60px;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        font-family: "Gilroy Semi-bold";
+    }
+}
+
+.about-right {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    &__card {
+        width: 228px;
+        height: 228px;
+        background: rgba(80, 75, 74, .9);
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+            transform: scale(1.05);
+            transition: transform .3s;
+            color: #79B282;
+            background: rgba(80, 75, 74, 1);
+        }
+
+        &:hover>.about-right__image {
+            filter: contrast(1);
+        }
+    }
+
+    &__image {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 25px;
+        filter: contrast(.1);
+        transition: .3s ease 0s;
+    }
+}
+
+
+@media (max-width:1210px) {
+    .about {
+        margin-bottom: 30px;
+        height: auto;
+
+        &__bg {
+            opacity: 0;
+        }
+
+        &__boyd {}
+
+        &__left {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+
+            & a {
+                margin: 30px auto 0;
+            }
+        }
+
+        &__right {
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+
+    .about-right__card {
+        width: 45%;
+        // margin: 5px;
+    }
+
+    .about-left {
+        &__title {
+            font-size: 1.7rem;
+        }
+
+        &__text {}
+    }
+
+}
+
+@media (max-width:992px) {}
+
+@media (max-width:767px) {}
+
+@media (max-width:576px) {
+    .about-left {
+        &__title {
+            font-size: 1.5rem;
+        }
+        &__text {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (max-width:479px) {
+    .about-right__card {
+        width: 100%;
+    }
+
+    .about-left {
+        &__title {
+            font-size: 1.2rem;
+        }
+        &__text {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .about-left {
+        &__title {
+            font-size: 1.2rem;
+        }
+        &__text {
+            font-size: 0.875rem;
+        }
+    }
+}

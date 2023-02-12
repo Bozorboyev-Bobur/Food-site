@@ -1,0 +1,21 @@
+{
+  "name": "digital_akademia_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass:./assets/css -w",
+    "pug": "pug ./templates/pages --out ./pages -P -w",
+    "compile": "concurrently \"npm run sass\" \"npm run pug\""
+  },
+  "author": "Elbek Khakimbekov",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "compile": "^0.0.2"
+  }
+}

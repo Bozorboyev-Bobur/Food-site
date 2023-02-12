@@ -1,0 +1,311 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Elegant retarurant
+        link(rel="stylesheet" href="../assets/css/stocks.css")
+    body 
+        #page-preloader.loading
+            .circles
+                span 
+                span 
+                span 
+                span 
+                span 
+                span 
+                span 
+                span 
+                span 
+                span
+                span 
+                span 
+                span 
+                span 
+                span 
+                span
+
+        header#header.header
+            .container 
+                .header__body
+                    #header-menu-btn.header__burger.burger
+                        span.burger__stick 
+                        span.burger__stick 
+                        span.burger__stick 
+                    #header-menu.header__menu.header-menu
+                        .header-menu__block
+                            .d5
+                                form
+                                    span(type='submit')
+                                        img(src="/assets/images/header/white-location.svg" alt="")
+                                    input(type='text' placeholder='Введите адрес доставки' id="superSearch").superSearch
+                                    button(type='submit')
+                                        img(src="/assets/images/header/Search.svg" alt="")
+                        .header-menu__contacts.contacts 
+                            a(href="tel:98765433456").contacts__tel Позвонить
+                                img(src="../assets/images/header/call.svg" alt="").contacts__img 
+                            a(href="#").contacts__bron Забронировать стол
+                                img(src="../assets/images/header/bookmark.svg" alt="").contacts__img 
+                        .header__lists
+                            ul.header-menu__list
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link О нас 
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Додо-книга
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Блог «Сила ума»
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Додо ИС
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Франшиза
+                            ul.header-menu__list
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link О нас 
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Додо-книга
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Блог «Сила ума»
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Додо ИС
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Франшиза
+                            ul.header-menu__list
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Франшиза 
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Поставщикам
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Почему мы готовим без перчаток?
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link Экскурсии и мастер-классы
+                                li.header-menu__item
+                                    a(href="#footer").header-menu__link В пиццерии
+
+                    h1.header__logo
+                        a(href="../pages/main.html") LOGOS
+                    a(href="#" id="open-pop-up").header__basket
+                        p Корзина
+                        span 
+                    #pop-up.pop-up
+                        #pop-up__bg.pop-up__bg
+                        .pop-up__container
+                            .pop-up__body
+                                img(src="../assets/images/header/cart.svg" alt="").pop-up__img
+                                span.pop-up__text корзина пустая
+                                #pop-up__button 
+                                    a(href="#menu").pop-up__button Посмортеть меню
+                                #pop-up-close.pop-up-close &#10006
+
+        #menu.menu.element-animation
+            .menu__content
+                .container
+                    ul.menu__list
+                        li.menu__item
+                            a.menu__link(href='#cool-snacks') Холодные закуски
+                        li.menu__item
+                            a.menu__link(href='#hot-snacks') Горячие закуски
+                        li.menu__item
+                            a.menu__link(href='#meat-snacks') Мясные блюда
+                        li.menu__item
+                            a.menu__link(href='#soup-snacks') Супы
+                        li.menu__item
+                            a.menu__link(href='#fish-snacks') Рыбные блюда
+                        li.menu__item
+                            a.menu__link(href='#cool-snacks') Холодные закуски
+                        li.menu__item
+                            a.menu__link(href='#branded-snacks') Фирменные блюда
+                        li.menu__item
+                            a.menu__link(href='#drink-snacks') Напитки
+
+        #stocks.slider
+            .slider__content
+                .container
+                    h2.slider__title.title Акции
+                .slider__list 
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="../assets/images/stocks/1.png" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Без мяса? Здесь!
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="../assets/images/stocks/2.png" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Выгодное комбо c напитками
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="../assets/images/stocks/3.png" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Сырный бортик
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+
+
+
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="../assets/images/stocks/2.png" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Без мяса? Здесь!
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="../assets/images/stocks/3.png" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Выгодное комбо c напитками
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="../assets/images/stocks/1.png" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Сырный бортик
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="../assets/images/stocks/3.png" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Без мяса? Здесь!
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="../assets/images/stocks/1.png" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Выгодное комбо c напитками
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="../assets/images/stocks/2.png" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Сырный бортик
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="https://dodopizza-a.akamaihd.net/static/Img/BonusActionBanners/Gallery/g_1635515571_a24b6709aad84886b1dfe8964bd0f293.jpeg" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Бесплатная Доставка!
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Бесплатная Доставка! Закажите заказ через сайт, приложение или позвонив в контактный центр и получите доставку до дома - совершенно бесплатно! За доставку нам платить не надо! *зона доставки ограничена
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="https://dodopizza-a.akamaihd.net/static/Img/BonusActionBanners/Gallery/g_1637144632_e9008f70b46f44f3b5ad68cf94492136.jpeg" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Ну всё, кешбэк!
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Делайте заказы и получайте 5% додокоинами. Меняйте додокоины на еду и напитки в мобильном приложении!
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+                    
+                    .slider__item.stocks-card.element-animation
+                        img.stocks-card__img(src="https://dodopizza-a.akamaihd.net/static/Img/BonusActionBanners/Gallery/g_1622432276_59229e58ab644a78b0eb593b7cb937c0.jpeg" alt="")
+                        .stocks-card__body
+                            .stocks-card__top.stocks-card-top
+                                .stocks-card-top__top-content
+                                    h3.stocks-card__title Поворотный момент
+                                .stocks-card-top__bottom-content    
+                                    .stocks-card__text Покупая горячий напиток, вы становитесь участником благотворительной акции и помогаете фонду «Старшие братья Старшие сёстры». Подробнее о фонде и условиях акции вы можете прочитать: 
+                                        a(href="#") https://vdo.do/charity
+                            .stocks-card__bottom
+                                .stocks-card__date до 31 июля
+
+
+        #map.map 
+            img(src="/assets/images/map/map.png" alt="").map__bg
+            //- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acc7f28a1b0329a2358bd46376b3651e73b5e6c96072e219d2c436e2169a4e303&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+            .container 
+                .map__modal.modal.element-animation
+                    h3.modal__title Контакты
+                    .modal__address.address
+                        span Наш адрес:
+                        p МО, городской округ Красногорск, село Ильинкое, Экспериментальная улица, 10
+                    .modal__mail
+                        span Наша почта:
+                        p auto.wash@gmail.com
+                    .modal__bottom
+                        button.modal__button Забронировать стол
+                        .modal__tel 
+                            span +998 (90) 123-45-67
+                            p Звоните или оставляйте заявку
+                    .modal__networks.networks 
+                        p Мы в соц сетях:
+                        .networks__imgs 
+                            img(src="../assets/images/map/facebook.svg" alt="")
+                            img(src="../assets/images/map/vk.svg" alt="")
+                            img(src="../assets/images/map/youtube.svg" alt="")
+                            img(src="../assets/images/map/instagram.svg" alt="")
+
+        footer#footer.footer(data-aos='fade-up' data-aos-anchor='.other-element' data-aos-delay="5000")
+            a(href="#header").footer__scroll-top-btn
+                img(src="../assets/images/footer/arrow.svg" alt="")
+            a(href="#header").footer__scroll-top-btn_small-device Поднятся в вверх
+                img(src="../assets/images/footer/arrow.svg" alt="")
+
+            .container
+                .footer__container 
+                    .footer__left
+                        .footer__logo Logos     
+                        p © ООО СК «АПШЕРОН» Все права защищены. 2010-2020
+                        a(href="#")  Пользовательское соглашение
+                        a(href="#")  Карта сайта
+                        a(href="#")  Политика конфиденциальности
+                    .footer__right 
+                        a(href="#")  О ресторане                       
+                        a(href="#")  Условия доставки
+                        a(href="#")  Возврат товара
+                        a(href="#")  Акции
+                        a(href="#")  ЧаВо
+
+
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+        script(src="../assets/scripts/preloader.js")
+        script(src="../assets/scripts/script.js")
+        script(src="../assets/scripts/slick.min.js") 
+        //- script(src="../assets/scripts/slider.js")
+        script(src="../assets/scripts/show-animation.js")
+        script(src="../assets/scripts/burger.js")
+        script(src="../assets/scripts/popup.js")
